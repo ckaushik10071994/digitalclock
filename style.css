@@ -1,0 +1,473 @@
+
+body{
+    background-color: #3D087B;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    justify-content: space-evenly;
+      /* margin: 10px 20px 0px 20px;  */ 
+}
+
+
+/* clock image */
+.clockimg{
+    padding-left: 25px;
+    padding-top: 15px;
+ }
+/* timeblock */
+.timecard{
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.line{
+    margin-left: 20px;
+}
+/* card1 block setup */
+.card1,img{
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+label{
+    margin-left: 3px;
+    font-size: 20px;
+}
+#wakeup{
+    margin-left: 50px;
+    width: 200px;
+    height: 20px;
+}
+#lunch{
+    margin-left: 73px;
+    width: 200px;
+    height: 20px;
+}
+#nap{
+    margin-left: 87px;
+    width: 200px;
+    height: 20px;
+}
+#night{
+    margin-left: 87px;
+    width: 200px;
+    height: 20px;
+}
+/* card2 */
+#greeting{
+    color: white;
+    background-color: #8E53F0;
+    height: 50px;
+    width: 450px;
+    margin-left: 35px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.card3{
+    margin-left: 35px;
+    /* margin-right: 810px; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#button{
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    background: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+}
+.card32{
+    color: #F25CFE;
+    background-color:#8E53F0 ;
+    border-radius: 15px;
+    height: 120px;
+    width: 230px;
+}
+.card32 p{
+    font-size: 13px;
+    width: auto;
+}
+/* time clock  */
+.leftcontainer{
+    margin-top: 50px;
+}
+.time {
+    
+    position: relative;
+    height: 80px;
+    width: 400px; 
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+     /* margin-top: 10px;  */
+    
+    margin-left: 30px;
+    opacity: 1;
+    z-index: 5;
+  
+}
+.time span{
+    font-size: 40px;
+    margin-left: 50px;
+    
+    
+   
+} 
+.time p{
+    /* margin-left: 50px; */
+    font-size: 18px;
+    text-align: center;
+} 
+.time .time2{
+    height: 80px;
+    width: 400px; 
+    border-radius: 10px;
+    margin-left: 30px;
+    /* margin-top: 10px; */
+    color: #5F0089;
+    /* text-align: center; */
+    justify-content: center;
+    flex-direction: row;
+   
+    
+}
+.time .timeopacity{
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    height: 80px;
+    width: 350px;
+    margin-left: 20px;
+    opacity: 0.71;
+    z-index: 2;
+}
+.time .timeopacity1{
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    height: 80px;
+    width: 300px;
+    margin-left: 40px;
+    opacity: 0.22;
+    z-index: 1;
+
+}
+.hours,.mins,.sec{
+    margin-top: 6px;
+    background-color: #F6E2FF;
+    height: 60px;
+    width: 50px;
+    font-size: 10px;
+}
+
+.ampm{
+    margin-top: 6px;
+    height: 60px;
+    width: 45px;
+    text-align: center;
+    background: linear-gradient(#6E54EC,#CB52F8);
+}
+/* text message */
+.card4{
+    margin-top: 50px;
+   height: 80px;
+   width: 400px;
+   background-color: white;
+   border-radius: 10px;
+   margin-left: 35px;
+   
+}
+#greeting1{
+    color: #8E53F0; 
+    padding-top: 25px;
+    text-align: center;
+}
+/* image change */
+.imageshow{
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: white; 
+    border-radius: 10px;
+    /* object-fit: contain; */
+}
+
+@media screen and (min-width:250px) and (max-width:500px){
+    #container{
+        overflow-y: hidden;
+        flex-direction: column;
+        height: max-content; 
+        width: min-content;
+        margin: auto;  
+        display: flex; 
+        justify-content: center;
+        
+    }
+    .timecard{
+        height: 250px;
+        width: 350px;
+        border-radius: 10px;
+        background-color: white;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    #wakeup{
+        margin-left: 50px;
+        width: 80px;
+        height: 20px;
+    }
+    #lunch{
+        margin-left: 70px;
+        width: 80px;
+        height: 20px;
+    }
+    #nap{
+        margin-left: 85px;
+        width: 80px;
+        height: 20px;
+    }
+    #night{
+        margin-left: 90px;
+        width: 80px;
+        height: 20px;
+    }
+    #greeting{
+        color: white;
+        background-color: #8E53F0;
+        height: 50px;
+        width: 350px;
+        margin-left: 10px;
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+    /* .card2{
+        width: 300px;
+    } */
+    
+    .card3{
+        margin-left: 10px;
+        /* margin-right: 810px; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        
+    }
+    #button{
+        border-radius: 10px;
+        width: 350px;
+        height: 40px;
+        background: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+    }
+    .card32{
+        color: #F25CFE;
+        background-color:#8E53F0 ;
+        border-radius: 15px;
+        height: 120px;
+        width: 350px;
+    }
+    .card32 p{
+        font-size: 12px;
+    
+        width: auto;
+    }
+    
+    .time {
+    
+        position: relative;
+        height: 80px;
+        width: 350px; 
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+         /* margin-top: 10px;  */
+        
+        margin-left: 10px;
+        opacity: 1;
+        z-index: 5;
+      
+    }
+    .time span{
+        font-size: 30px;
+        margin-left: 30px;
+        
+        
+       
+    } 
+    .time p{
+        font-size: 14px;
+        /* text-align: center; */
+    } 
+    .time .time2{
+        height: 80px;
+        width: 350px; 
+        border-radius: 10px;
+        margin-left: 10px;
+        /* margin-top: 10px; */
+        color: #5F0089;
+        /* text-align: center; */
+        justify-content: center;
+        flex-direction: row;
+       
+        
+    }
+    .time .timeopacity{
+        position: absolute;
+        top: 20px;
+        background-color: white;
+        height: 80px;
+        width: 300px;
+        margin-left: 30px;
+        opacity: 0.71;
+        z-index: 2;
+    }
+    .time .timeopacity1{
+        position: absolute;
+        top: 30px;
+        background-color: white;
+        height: 80px;
+        width: 240px;
+        margin-left: 60px;
+        opacity: 0.22;
+        z-index: 1;
+    
+    }
+    
+    /* text message */
+    .card4{
+        margin-top: 50px;
+       height: 80px;
+       width: 350px;
+       background-color: white;
+       border-radius: 10px;
+       margin-left: 10px;
+       
+    }
+    #greeting1{
+        color: #8E53F0; 
+        padding-top: 25px;
+        text-align: center;
+    }
+    /* image change */
+    .imageshow{
+        margin-top: 10px;
+        margin-left:10px;
+        /* margin-right: 10px; */
+        background-color: white; 
+        border-radius: 10px;
+        /* object-fit: contain; */
+    }
+    .imageshow img{
+        width: 300px;
+        height: 300px;
+        
+        }
+    
+    
+}      
+    
+
+@media screen and (min-width:500px) and (max-width:900px){
+#container{
+       
+        flex-direction: column;
+        height: max-content;
+        width: max-content;
+        margin: auto;
+    }
+    #button{
+        border-radius: 10px;
+        width: 160px;
+        height: 40px;
+        
+        background: linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+    }
+    .time {
+    
+        position: relative;
+        height: 80px;
+        width: 440px; 
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+         /* margin-top: 10px;  */
+        
+        margin-left: 40px;
+        opacity: 1;
+        z-index: 5;
+      
+    }
+    .time p{
+        font-size: 18px;
+        text-align: center;
+    } 
+    .time .time2{
+        height: 80px;
+        width: 400px; 
+        border-radius: 10px;
+        margin-left: 20px;
+        /* margin-top: 10px; */
+        color: #5F0089;
+        /* text-align: center; */
+        justify-content: center;
+        flex-direction: row;
+       
+        
+    }
+    .time .timeopacity{
+        position: absolute;
+        top: 20px;
+        background-color: white;
+        height: 80px;
+        width: 360px;
+        margin-left: 40px;
+        opacity: 0.71;
+        z-index: 2;
+    }
+    .time .timeopacity1{
+        position: absolute;
+        top: 30px;
+        background-color: white;
+        height: 80px;
+        width: 300px;
+        margin-left: 65px;
+        opacity: 0.22;
+        z-index: 1;
+    
+    }
+    
+    /* text message */
+    .card4{
+        margin-top: 50px;
+       height: 80px;
+       width: 440px;
+       background-color: white;
+       border-radius: 10px;
+       margin-left: 40px;
+       
+    }
+    #greeting1{
+        color: #8E53F0; 
+        padding-top: 25px;
+        text-align: center;
+    }
+    /* image change */
+    .imageshow{
+        margin-top: 10px;
+        margin-left: 40px;
+        background-color: white; 
+        border-radius: 10px;
+        /* height: 300px;
+        width: 300px; */
+        /* object-fit: contain; */
+    }
+    .imageshow img{
+    width: 400px;
+     height:300px"
+    
+    }
+}
